@@ -1,0 +1,398 @@
+<!-- HELLO
+-
+DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
+Created by Anil Seervi.
+-
+GitHub repo: https://github.com/AnilSeervi/DevFolio
+README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
+-
+Have fun creating your portfolio on this template!!! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>Josu | Developer</title>
+
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="Josu, Joseph, Web development" />
+
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="Josu | Developer" />
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://devfolio.js.org/" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="Josu | Developer" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Made using DevFolio Template" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- Again fill content attr with the URL of this portfolio you'll host -->
+    <meta property="twitter:url" content="https://devfolio.js.org" />
+    <!-- Recommended to use the same text used within <title> element -->
+    <meta property="twitter:title" content="Josu | Developer" />
+    <!-- short description that shows up while your portfolio is shared -->
+    <meta
+      property="twitter:description"
+      content="Made using DevFolio Template"
+    />
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.vercel.app/assets/devfolio.png"
+    />
+
+    <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FontAwesome Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+
+    <!-- Remove Google Analytics once you have your portfolio website set-up -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-122228201-4");
+    </script>
+    <!-- End of Google Analytics -->
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is <span class="text-color-main name">Joseph</span>
+          <br />
+          I'm a frontend Developer.
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#contact">Get in touch</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/me.png"
+              alt="Profile Image"
+              width="450"
+              height="350"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              I am a passionate Computer Science student and Frontend Developer
+              with hands-on experience in building responsive, user-friendly web
+              interfaces. I specialize in transforming ideas into Functional and
+              visually appealing web applications using modern frontend
+              technologies
+            </p>
+            <p class="about-wrapper__info-text">
+              During my SIWES industrial training at AXIA HUB, I gained
+              practical industry experience working on real-world projects,
+              including a School Management System, where I developed the
+              Student Registration and login module. This experience
+              strengthened my understanding of frontend development, backend
+              integration, and collaborative software development using version
+              control.
+            </p>
+            <p class="about-wrapper__info-text">
+              My technical skill set includes HTML, CSS, Bootstrap, JavaScript,
+              PHP, Python, and MySQL with practical experience using tools such
+              as XAMPP, Git, and Github. I enjoy solving problems, debugging
+              code, and continuously improving my skills through learning and
+              practice.
+            </p>
+            <p class="about-wrapper__info-text">
+              I am motivated, detail-oriented, and eager to grow as a software
+              developer by contributing to meaningful projects, learning from
+              experienced professionals, and building solutions that create real
+              impact.
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Advice Generator App</h3>
+              <p class="project-wrapper__text-info">
+                A simple web application that generate random advice for users
+                at the click of a button. Built to practice JavaScript logic,
+                API integration, and DOM manipulation. Designed with a clean and
+                responsive interface. Focuses on usability and interactive user
+                experience. Developed using HTML, CSS, JavaScript, and
+                Bootstrap.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://advice-generator-app-nine-jet.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <!-- <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a -->
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/advice.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Car Website</h3>
+              <p class="project-wrapper__text-info">
+                This project is a visually focused landing page built with HTML,
+                CSS, and JavaScript to highlight the beauty and design of the
+                Lamborghini Aventador. The layout is clean and bold, with strong
+                visuals that keep the attention on the car itself. CSS was used
+                to create a sleek, modern style with smooth spacing and
+                responsive design. JavaScript adds subtle interactivity to
+                enhance the overall experience. The project demonstrates my
+                ability to create stylish, high-impact landing pages that focus
+                on aesthetics and user engagement.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://car-website-six-delta.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/adventador.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Ifeco Phone Store</h3>
+              <p class="project-wrapper__text-info">
+                Ifeco Phone Store is a modern and responsive website built using
+                HTML, CSS, and JavaScript. The design focuses on a clean layout
+                that highlights smartphones and accessories in an organized way.
+                CSS was used to create a simple, polished style with smooth
+                spacing and mobile-friendly responsiveness. JavaScript adds
+                basic interactivity to improve navigation and user experience.
+                This project showcases my ability to design clean, functional
+                store websites with a strong focus on usability and
+                presentation.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://ifeco-gadgets.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/ifeco.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title">Let’s Work Together</h2>
+
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">
+            Have a project in mind or just want to connect? Feel free to reach
+            out via email.
+          </p>
+          <a
+            href="mailto:yilkudijoseph@gmail.com"
+            class="cta-btn cta-btn--primary"
+          >
+            Email Me
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <!-- <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a> -->
+          <a
+            href="https://www.instagram.com/josephweblab"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <!-- <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="codepen"
+          >
+            <i class="fa-brands fa-codepen"></i>
+          </a> -->
+          <a
+            href="https://www.linkedin.com/in/joseph-yilkudi-89b77b24b"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/Josu224"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> Joseph Yilkudi – Web Designer &
+          Developer. <br />
+          Made with &hearts; |
+          <a href="mailto:yilkudijoseph@gmail.com">yilkudijoseph@gmail.com</a>
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
+</html>

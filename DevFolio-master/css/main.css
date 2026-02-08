@@ -2079,3 +2079,171 @@ section .row span {
     font-size: 1.5rem;
   }
 }
+
+/* Enhanced Brochure Download Styles */
+.brochure-download {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 2px solid #e2e8f0;
+  border-left: 5px solid #36d1dc;
+  transition: all 0.3s ease;
+}
+
+.brochure-download:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-color: #36d1dc;
+}
+
+.brochure-icon {
+  font-size: 2.5rem;
+  color: #36d1dc;
+  background: rgba(54, 209, 220, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 0;
+}
+
+.brochure-content h4 {
+  color: #1e293b;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.brochure-content>p {
+  color: #475569;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(54, 209, 220, 0.3);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(54, 209, 220, 0.4);
+  background: linear-gradient(135deg, #2bc4d0 0%, #4a75d8 100%);
+}
+
+.download-btn:active {
+  transform: translateY(-1px);
+}
+
+.download-btn i {
+  font-size: 1.3rem;
+}
+
+.file-size-badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-left: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.brochure-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.brochure-features span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.brochure-features i {
+  color: #10b981;
+  font-size: 0.9rem;
+}
+
+/* Contact section brochure button */
+.contact-option .cta-btn--secondary {
+  background: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+}
+
+.contact-option .cta-btn--secondary:hover {
+  background: linear-gradient(135deg, #2bc4d0 0%, #4a75d8 100%);
+  transform: translateY(-2px);
+}
+
+/* Download confirmation animation */
+@keyframes downloadPulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.downloading {
+  animation: downloadPulse 1s ease infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .brochure-icon {
+    font-size: 2rem;
+    padding: 12px;
+  }
+
+  .brochure-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .download-btn {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+
+  .brochure-features {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brochure-download {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brochure-icon {
+    margin-bottom: 15px;
+  }
+}

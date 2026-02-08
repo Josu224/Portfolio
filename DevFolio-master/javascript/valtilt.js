@@ -858,3 +858,51 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Mobile-specific fixes
+function applyMobileFixes() {
+    if (window.innerWidth <= 768) {
+        // Fix hero title line breaks
+        const heroTitle = document.querySelector('.hero-title');
+        if (heroTitle) {
+            heroTitle.innerHTML = heroTitle.innerHTML
+                .replace('<span class="text-color-main">', '<br><span class="text-color-main">');
+        }
+        
+        // Fix package tiers order (featured first on mobile)
+        const packageTiers = document.querySelector('.package-tiers');
+        if (packageTiers) {
+            const featuredTier = packageTiers.querySelector('.featured');
+            if (featuredTier) {
+                packageTiers.insertBefore(featuredTier, packageTiers.firstChild);
+            }
+        }
+        
+        // Fix image loading for mobile
+        document.querySelectorAll('img').forEach(img => {
+            if (img.hasAttribute('width') || img.hasAttribute('height')) {
+                img.style.width = '100%';
+                img.style.height = 'auto';
+            }
+        });
+        
+        // Fix tap targets
+        document.querySelectorAll('a, button').forEach(element => {
+            element.style.minHeight = '44px';
+            element.style.minWidth = '44px';
+        });
+    }
+}
+
+// Apply fixes on load and resize
+window.addEventListener('load', applyMobileFixes);
+window.addEventListener('resize', applyMobileFixes);
+
+// Prevent horizontal scrolling
+window.addEventListener('scroll', function() {
+    if (window.innerWidth <= 768) {
+        if (window.scrollX !== 0) {
+            window.scrollTo(0, window.scrollY);
+        }
+    }
+});
